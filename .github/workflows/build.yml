@@ -11,17 +11,16 @@ jobs:
         working-directory: ./proj
     strategy:
       matrix:
-        g++-version:
+        gversion:
           - 9.3.0
     steps:
       - uses: actions/checkout@v3
       - name: my-step
         uses: actions/setup-g++@v9
         with:
-          g++-version: '${{matrix.g++-version}}'
+          gversion: '${{matrix.gversion}}'
       - name: Install dependencies
-    run: |
-      sudo apt update
-      sudo apt install build-essential
-      g++ ./proj/*.cpp
-
+        run: |
+          sudo apt update
+          sudo apt install build-essential
+          g++ ./proj/*.cpp
