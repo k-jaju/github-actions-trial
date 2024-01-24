@@ -1,6 +1,6 @@
 name: hello-world
-'on':
-  pull_request:
+on:
+  push:
     branches:
       - trial*
 jobs:
