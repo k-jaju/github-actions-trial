@@ -1,8 +1,5 @@
 name: hello-world
-on:
-  push:
-    branches:
-      - trial*
+on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
