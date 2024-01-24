@@ -19,5 +19,5 @@ jobs:
           sudo apt install build-essential
       - name: Compile
         run: |
-          cd ../../proj
-          g++ *.cpp
+          pwd
+          
