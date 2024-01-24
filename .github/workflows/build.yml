@@ -19,4 +19,4 @@ jobs:
         run: |
           sudo apt update
           sudo apt install build-essential
-          g++ ./proj/happy.cpp
+          g++ ../../proj/*.cpp
