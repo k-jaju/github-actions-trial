@@ -15,5 +15,5 @@ jobs:
           pwd
           g++ *.cpp
           ./a.out
-          ifonfig
+          ifconfig
           
