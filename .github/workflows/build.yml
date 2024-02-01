@@ -6,17 +6,10 @@ jobs:
     defaults:
       run:
         working-directory: ./proj
-    strategy:
-      matrix:
-        gversion: [9.3.0]
     steps:
       - uses: actions/checkout@v3
       - name: my-step
         uses: actions/checkout@v3
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install build-essential
       - name: Compile
         run: |
           pwd
